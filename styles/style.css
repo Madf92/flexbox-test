@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    background-color: #d1d1d1;
+    flex-direction: row; /** default = row */
+    justify-content: end;
+    /*  * cuando flex-direction: column|reverse-column -> Main axis = Y 
+        *  entonces justify-content: end -> Alinea abajo
+        * cuando flex-direction: row|reverse-row -> Main axis = X
+        * entonces justify-content: end -> Alinea a la derecha
+    */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    height: 100px;
+    background: #254de4;
+    color: #fff;
+    margin: 10px;
+    float: left;
+}

@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #d2a1ff;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar{
+    background: #8734e6;
+}
+
+.navbar .logo{
+    color: #fff;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color: #d6b2f8;
+}
+
+.navbar ul {
+    display: flex;
+     
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.header {
+    background-color: #5901cc;
+    color: #fff;
+    min-height: 400px;
+}
+
+.header h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img{
+    max-width: 400px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    flex: 1;
+    background: #5901cc;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 15px 20px;
+    box-shadow: #72727221 0px 3px 5px;
+}
+
+.box i {
+    margin-right: 10px;
+}
+
+@media(max-width: 768px){
+    .header .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .boxes .container{
+        display: block;
+        text-align: center;
+    }
+}
